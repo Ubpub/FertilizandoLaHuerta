@@ -9,6 +9,7 @@ public class CameraFixedLogic : MonoBehaviour
     void Awake()
 {
     cam = GetComponent<Camera>();
+    Screen.fullScreen = true;
 }
 void LateUpdate()
 
