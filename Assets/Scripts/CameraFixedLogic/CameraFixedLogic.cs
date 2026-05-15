@@ -2,19 +2,21 @@ using UnityEngine;
 
 public class CameraFixedLogic : MonoBehaviour
 {
-    public float fixedWidthUnits = 19.2f;
+    public float fixedWidthUnits = 19.2f; 
 
     private Camera cam;
 
     void Awake()
-{
-    cam = GetComponent<Camera>();
-    Screen.fullScreen = true;
-}
-void LateUpdate()
+    {
+        cam = GetComponent<Camera>();
+        Screen.fullScreen = true;
+    }
 
-{
-    float aspect = (float)Screen.width / Screen.height;
-    cam.orthographicSize = fixedWidthUnits / (2f * aspect);
-}
+    void LateUpdate()
+    {
+        if (cam == null) return;
+
+        float currentAspect = (float)Screen.width / Screen.height;
+        cam.orthographicSize = (fixedWidthUnits / 2f) / currentAspect;
+    }
 }
