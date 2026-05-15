@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 14233777}
   - component: {fileID: 14233776}
   m_Layer: 0
-  m_Name: Musgo troncos
+  m_Name: Musgo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 123472929}
   - component: {fileID: 123472928}
   m_Layer: 0
-  m_Name: Fondo (1)
+  m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 308451680}
   - component: {fileID: 308451679}
   m_Layer: 0
-  m_Name: Arboles back (1)
+  m_Name: Arboles1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,9 +458,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 2027960571
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3947250759302106236, guid: 8a6e811e876690a4c8a19388097628df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -481,7 +481,7 @@ Transform:
   m_GameObject: {fileID: 394067441}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.565, y: -1.602, z: 0}
+  m_LocalPosition: {x: -6.565, y: -1.602, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -617,6 +617,7 @@ GameObject:
   - component: {fileID: 533140430}
   - component: {fileID: 533140429}
   - component: {fileID: 533140432}
+  - component: {fileID: 533140433}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -742,6 +743,19 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &533140433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533140428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88df1ba0c05a09d42acd0126f472ffa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFixedLogic
+  fixedWidthUnits: 19.2
 --- !u!1 &541189526
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,7 +877,7 @@ Transform:
   m_GameObject: {fileID: 549251557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -914,8 +928,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 573769001
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -2415,7 +2429,7 @@ GameObject:
   - component: {fileID: 930708761}
   - component: {fileID: 930708760}
   m_Layer: 0
-  m_Name: Plantas suelo
+  m_Name: Plantas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2506,7 +2520,7 @@ GameObject:
   - component: {fileID: 1216682286}
   - component: {fileID: 1216682285}
   m_Layer: 0
-  m_Name: Suelo Copy
+  m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2597,7 +2611,7 @@ GameObject:
   - component: {fileID: 1344785015}
   - component: {fileID: 1344785014}
   m_Layer: 0
-  m_Name: Arboles back Copy (1)
+  m_Name: Arboles2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2730,7 +2744,7 @@ GameObject:
   - component: {fileID: 1611572387}
   - component: {fileID: 1611572386}
   m_Layer: 0
-  m_Name: "Monta\xC3\xB1as"
+  m_Name: Montanas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3003,7 +3017,7 @@ GameObject:
   - component: {fileID: 2137386332}
   - component: {fileID: 2137386331}
   m_Layer: 0
-  m_Name: Arboles front (1)
+  m_Name: Arboles front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
