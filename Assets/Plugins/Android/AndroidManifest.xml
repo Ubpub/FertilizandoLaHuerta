@@ -22,5 +22,6 @@
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
             <meta-data android:name="android.app.lib_name" android:value="game" />
         </activity>
-    </application<meta-data android:name="android.max_aspect" android:value="2.5" />>
+        <meta-data android:name="android.max_aspect" android:value="2.5" />
+    </application>
 </manifest>
