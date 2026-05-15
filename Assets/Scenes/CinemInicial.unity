@@ -458,9 +458,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1608311921
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3947250759302106236, guid: 8a6e811e876690a4c8a19388097628df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -481,7 +481,7 @@ Transform:
   m_GameObject: {fileID: 394067441}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.565, y: -1.602, z: 0}
+  m_LocalPosition: {x: -6.565, y: -1.602, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -617,6 +617,7 @@ GameObject:
   - component: {fileID: 533140430}
   - component: {fileID: 533140429}
   - component: {fileID: 533140432}
+  - component: {fileID: 533140433}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -742,6 +743,19 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &533140433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533140428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88df1ba0c05a09d42acd0126f472ffa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFixedLogic
+  fixedWidthUnits: 19.2
 --- !u!1 &541189526
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,8 +928,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1037564917
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -2397,7 +2411,7 @@ Transform:
   m_GameObject: {fileID: 712871028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
