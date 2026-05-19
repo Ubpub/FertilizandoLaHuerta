@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 26dd911b21db9454fa4fedf40bf7f829
+guid: 0c17d39d28164394dbc0e311f0bbe78d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 653972014112401419
-    second: escarabajo_walk_0
-  - first:
-      213: 2634935999795437964
-    second: escarabajo_walk_1
-  - first:
-      213: 1364680442090855780
-    second: escarabajo_walk_2
+      213: -8449597320800042236
+    second: Tilemap2_cuesta_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,7 +126,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: escarabajo_walk_0
+      name: tilemap_noche_cuesta_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b80f6d1bdb1e74da7df03e5c2cf633
+      internalID: 680546591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_noche_cuesta_1
       rect:
         serializedVersion: 2
         x: 0
@@ -145,54 +161,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b08673af410631900800000000000000
-      internalID: 653972014112401419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: escarabajo_walk_1
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8122b1d45c219420800000000000000
-      internalID: 2634935999795437964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: escarabajo_walk_2
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46d9fb6b1a150f210800000000000000
-      internalID: 1364680442090855780
+      spriteID: a4e678507636fbc4e9d3e8cc4dd704a4
+      internalID: 1699251751
       vertices: []
       indices: 
       edges: []
@@ -201,7 +173,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30c2d430fd92bc34c91464bdc5b696fc
+    spriteID: 23faaf4d136f93b458a3fd7469673256
     internalID: 0
     vertices: []
     indices: 
@@ -211,11 +183,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":320.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":2.0},"gridSpriteSize":{"x":320.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      escarabajo_walk_0: 653972014112401419
-      escarabajo_walk_1: 2634935999795437964
-      escarabajo_walk_2: 1364680442090855780
+      tilemap_noche_cuesta_0: 680546591
+      tilemap_noche_cuesta_1: 1699251751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

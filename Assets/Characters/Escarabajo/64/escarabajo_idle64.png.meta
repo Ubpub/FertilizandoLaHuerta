@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 26dd911b21db9454fa4fedf40bf7f829
+guid: 2555e406c012eeb498a72b671a533862
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 653972014112401419
-    second: escarabajo_walk_0
+      213: 7369679738462607328
+    second: escarabajo_idle64_0
   - first:
-      213: 2634935999795437964
-    second: escarabajo_walk_1
+      213: 4830103434603997250
+    second: escarabajo_idle64_1
   - first:
-      213: 1364680442090855780
-    second: escarabajo_walk_2
+      213: -2641048739119871742
+    second: escarabajo_idle64_2
+  - first:
+      213: 2317230229532377492
+    second: escarabajo_idle64_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,12 +109,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -132,67 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: escarabajo_walk_0
+      name: escarabajo_idle64_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 320
-        height: 320
+        width: 47
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b08673af410631900800000000000000
-      internalID: 653972014112401419
+      spriteID: 0e715770dac564660800000000000000
+      internalID: 7369679738462607328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escarabajo_walk_1
+      name: escarabajo_idle64_1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 72
         y: 0
-        width: 320
-        height: 320
+        width: 47
+        height: 63
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8122b1d45c219420800000000000000
-      internalID: 2634935999795437964
+      spriteID: 24827f79b79f70340800000000000000
+      internalID: 4830103434603997250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: escarabajo_walk_2
+      name: escarabajo_idle64_2
       rect:
         serializedVersion: 2
-        x: 640
+        x: 136
         y: 0
-        width: 320
-        height: 320
+        width: 47
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46d9fb6b1a150f210800000000000000
-      internalID: 1364680442090855780
+      spriteID: 20944462a2c195bd0800000000000000
+      internalID: -2641048739119871742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo_idle64_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4910316dd94782020800000000000000
+      internalID: 2317230229532377492
       vertices: []
       indices: 
       edges: []
@@ -201,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 30c2d430fd92bc34c91464bdc5b696fc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -209,13 +234,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":320.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      escarabajo_walk_0: 653972014112401419
-      escarabajo_walk_1: 2634935999795437964
-      escarabajo_walk_2: 1364680442090855780
+      escarabajo_idle64_0: 7369679738462607328
+      escarabajo_idle64_1: 4830103434603997250
+      escarabajo_idle64_2: -2641048739119871742
+      escarabajo_idle64_3: 2317230229532377492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -44,11 +44,14 @@ TagManager:
   - name: Fondo
     uniqueID: 2690584477
     locked: 0
-  - name: Char
-    uniqueID: 2027960571
+  - name: Personajes
+    uniqueID: 1608311921
     locked: 0
   - name: Tilemap
-    uniqueID: 573769001
+    uniqueID: 3257402379
+    locked: 0
+  - name: UI
+    uniqueID: 2725177033
     locked: 0
   m_RenderingLayers:
   - Default
