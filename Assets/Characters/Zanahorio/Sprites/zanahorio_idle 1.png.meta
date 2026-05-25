@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8a6e811e876690a4c8a19388097628df
+guid: fac89ee690d9264468d5459f87ac1d1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3947250759302106236
-    second: zanahorio_idle_0
+      213: -1271619073621725733
+    second: zanahorio_idle 1_0
   - first:
-      213: -226286790551564102
-    second: zanahorio_idle_1
+      213: -7899281621591956897
+    second: zanahorio_idle 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zanahorio_idle_0
+      name: zanahorio_idle 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 483386c095c8839c0800000000000000
-      internalID: -3947250759302106236
+      spriteID: bdd6a2b903d4a5ee0800000000000000
+      internalID: -1271619073621725733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zanahorio_idle_1
+      name: zanahorio_idle 1_1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 64
         y: 0
-        width: 320
-        height: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab09fc7ec511cdcf0800000000000000
-      internalID: -226286790551564102
+      spriteID: f526d34a73d106290800000000000000
+      internalID: -7899281621591956897
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: edea03b5af77d054cb6c8774a7f4f737
+    spriteID: 7770d9f0b3791a44589fefbf6f98f587
     internalID: 0
     vertices: []
     indices: 
@@ -186,10 +186,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":320.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      zanahorio_idle_0: -3947250759302106236
-      zanahorio_idle_1: -226286790551564102
+      zanahorio_idle 1_0: -1271619073621725733
+      zanahorio_idle 1_1: -7899281621591956897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

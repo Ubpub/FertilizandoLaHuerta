@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: abdbb251f2ffc0147b320a2eaf4b5bdf
+guid: 3fdebf82262f77348a837d366ac7e894
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7037067315979183973
-    second: tilemap_noche_0
+      213: 3786170104364413420
+    second: Tilemap2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tilemap_noche_0
+      name: Tilemap2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 640
-        width: 320
-        height: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b989c826f80575e90800000000000000
-      internalID: -7037067315979183973
+      spriteID: ce138d166ad2b8430800000000000000
+      internalID: 3786170104364413420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_noche_1
+      name: Tilemap2_1
       rect:
         serializedVersion: 2
-        x: 320
-        y: 640
-        width: 320
-        height: 320
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 525bf0edf94569d429292d3431a04e17
-      internalID: 1365821175
+      spriteID: 16764a2e51b687b45ba843ee133280c5
+      internalID: -1331832456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_noche_2
+      name: Tilemap2_2
       rect:
         serializedVersion: 2
-        x: 640
-        y: 640
-        width: 320
-        height: 320
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,86 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4623a903f5eb1fd4988e4d3a5e0f149a
-      internalID: -979352853
+      spriteID: 275fb4f7eabb95243b3b4a21f2870cd6
+      internalID: 529576148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_noche_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f77fc8a058b8f1c4aa7e406927eebc39
-      internalID: -1420065482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemap_noche_4
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0c92ed84ea92284cb7cd8b068d896cb
-      internalID: 223094359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemap_noche_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 320
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cafba870e8e53de44b1c059fa7de447c
-      internalID: 2110331996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tilemap_noche_6
+      name: Tilemap2_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 320
-        height: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81421cbe299ed924ebea01d42f987285
-      internalID: -1357489762
+      spriteID: 7122d138049779d439af4213f2632768
+      internalID: 1767788259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_noche_7
+      name: Tilemap2_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 320
-        height: 320
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84eb41deda5ae6944b89225a55334b9c
-      internalID: -310908124
+      spriteID: 3d387a0951541e0479690903189a62f8
+      internalID: 502472520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_noche_8
+      name: Tilemap2_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 320
-        height: 320
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,8 +251,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd995541eee971f48ad857810ff8e466
-      internalID: -652990953
+      spriteID: 83a6d2c5700e2ab4f899e2c6c9e94aa5
+      internalID: -418469840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29e306f487498e40aba14bc8f8323a0
+      internalID: 2029749435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap2_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5149129158ca07449b3b963c1e91fbaa
+      internalID: -590622472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap2_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c9ba2629d18ce45a16e450c84d7719
+      internalID: 1291118613
       vertices: []
       indices: 
       edges: []
@@ -327,7 +327,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fcc90031131cca04297c4d89fcf8fced
+    spriteID: 111b67d4e2868374c9f3e2e0bda33a4f
     internalID: 0
     vertices: []
     indices: 
@@ -337,17 +337,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":320.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      tilemap_noche_0: -7037067315979183973
-      tilemap_noche_1: 1365821175
-      tilemap_noche_2: -979352853
-      tilemap_noche_3: -1420065482
-      tilemap_noche_4: 223094359
-      tilemap_noche_5: 2110331996
-      tilemap_noche_6: -1357489762
-      tilemap_noche_7: -310908124
-      tilemap_noche_8: -652990953
+      Tilemap2_0: 3786170104364413420
+      Tilemap2_1: -1331832456
+      Tilemap2_2: 529576148
+      Tilemap2_3: 1767788259
+      Tilemap2_4: 502472520
+      Tilemap2_5: -418469840
+      Tilemap2_6: 2029749435
+      Tilemap2_7: -590622472
+      Tilemap2_8: 1291118613
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
