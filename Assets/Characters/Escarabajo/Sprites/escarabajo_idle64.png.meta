@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 8a6e811e876690a4c8a19388097628df
+guid: 2555e406c012eeb498a72b671a533862
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3947250759302106236
-    second: zanahorio_idle_0
+      213: 7369679738462607328
+    second: escarabajo_idle64_0
   - first:
-      213: -226286790551564102
-    second: zanahorio_idle_1
+      213: 4830103434603997250
+    second: escarabajo_idle64_1
+  - first:
+      213: -2641048739119871742
+    second: escarabajo_idle64_2
+  - first:
+      213: 2317230229532377492
+    second: escarabajo_idle64_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,12 +109,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -116,12 +122,12 @@ TextureImporter:
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -129,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zanahorio_idle_0
+      name: escarabajo_idle64_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 483386c095c8839c0800000000000000
-      internalID: -3947250759302106236
+      spriteID: 0e715770dac564660800000000000000
+      internalID: 7369679738462607328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zanahorio_idle_1
+      name: escarabajo_idle64_1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 64
         y: 0
-        width: 320
-        height: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +172,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab09fc7ec511cdcf0800000000000000
-      internalID: -226286790551564102
+      spriteID: 24827f79b79f70340800000000000000
+      internalID: 4830103434603997250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo_idle64_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20944462a2c195bd0800000000000000
+      internalID: -2641048739119871742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo_idle64_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4910316dd94782020800000000000000
+      internalID: 2317230229532377492
       vertices: []
       indices: 
       edges: []
@@ -176,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: edea03b5af77d054cb6c8774a7f4f737
+    spriteID: 5413518df90934d46945774ce019d939
     internalID: 0
     vertices: []
     indices: 
@@ -186,10 +236,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":320.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      zanahorio_idle_0: -3947250759302106236
-      zanahorio_idle_1: -226286790551564102
+      escarabajo_idle64_0: 7369679738462607328
+      escarabajo_idle64_1: 4830103434603997250
+      escarabajo_idle64_2: -2641048739119871742
+      escarabajo_idle64_3: 2317230229532377492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

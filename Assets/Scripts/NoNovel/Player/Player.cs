@@ -19,8 +19,15 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Attack")]
+    public Transform attackPoint; // un empty delante del player
+    public float attackRadius = 0.35f;
+    public LayerMask enemyLayer;
+    public int damage = 1;
+
     [Header("AttackPoint offset (flipX)")]
     public Vector2 rightOffset = new Vector2(0.45f, 0.0f);
+    
     private float moveDirection;
     bool isGrounded;
 
@@ -161,10 +168,13 @@ public class Player : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        if(groundCheck != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-        }
+        // if(groundCheck != null)
+        // {
+        //     Gizmos.color = Color.red;
+        //     Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        // }
+
+        if (attackPoint == null) return;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 }
