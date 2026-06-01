@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Attack")]
     [SerializeField] private float attackDuration = 0.2f;
-    // [SerializeField] private int damage = 1;
+    [SerializeField] private int damage = 1;
 
     private bool isAttacking;
 
@@ -58,14 +58,14 @@ public class PlayerAttack : MonoBehaviour
     {
         if (!isAttacking) return;
 
-        // if (col.CompareTag("Enemy"))
-        // {
-        //     EnemyHealth eh = col.GetComponent<EnemyHealth>();
-        //     if (eh != null)
-        //     {
-        //         eh.TakeDamage(damage);
-        //         Debug.Log("Enemigo golpeado por el jugador");
-        //     }
-        // }
+        if (col.CompareTag("Enemy"))
+        {
+            EnemyHealth eh = col.GetComponent<EnemyHealth>();
+            if (eh != null)
+            {
+                eh.TakeDamage(damage);
+                Debug.Log("Enemigo golpeado por el jugador");
+            }
+        }
     }
 }

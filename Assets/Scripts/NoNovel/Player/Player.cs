@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    // private PlayerHealth playerHealth;
+    private PlayerHealth playerHealth;
 
     [Header("Movement")]
     [SerializeField] private float speed;
@@ -40,17 +41,18 @@ public class Player : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (playerAnimator == null) playerAnimator = GetComponent<Animator>();
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
+        if (playerHealth == null) playerHealth = GetComponent<PlayerHealth>();
     }
 
     void Update()
     {
-        // if (playerHealth != null && playerHealth.controlsLocked) return;
-        // if (spriteRenderer == null || attackPoint == null) return;
+        if (playerHealth != null && playerHealth.controlsLocked) return;
+        if (spriteRenderer == null || attackPoint == null) return;
 
         Vector2 off = rightOffset;
         if (spriteRenderer.flipX) off.x = -rightOffset.x;
 
-        // attackPoint.localPosition = off;
+        attackPoint.localPosition = off;
 
         ReadInput();
         UpdateGrounded();
@@ -61,7 +63,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // if (playerHealth != null && playerHealth.controlsLocked) return;
+        if (playerHealth != null && playerHealth.controlsLocked) return;
 
         ApplyMovement();
     }
