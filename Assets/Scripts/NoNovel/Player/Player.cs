@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float speed;
+    [SerializeField] private JoystickController joystick;
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 10f;
@@ -32,9 +33,9 @@ public class Player : MonoBehaviour
     private float moveDirection;
     bool isGrounded;
 
-    private int movementTouchId = -1;
-    private Vector2 movementStartPos;
-    [SerializeField] private float swipeDeadZone = 30f;
+    // private int movementTouchId = -1;
+    // private Vector2 movementStartPos;
+    // [SerializeField] private float swipeDeadZone = 30f;
 
     private void Awake()
     {
@@ -74,42 +75,48 @@ public class Player : MonoBehaviour
         // PC controls
         moveDirection = Input.GetAxis("Horizontal");
 
-        // Android controls
-        if (Input.touchCount > 0)
+        // Joystick controls
+        if (joystick != null && Mathf.Abs(joystick.Horizontal) > 0.01f)
         {
-            foreach (Touch touch in Input.touches)
-            {
-                // Start movement touch on left side
-                if (touch.phase == TouchPhase.Began &&
-                    touch.position.x < Screen.width / 2f &&
-                    movementTouchId == -1)
-                {
-                    movementTouchId = touch.fingerId;
-                    movementStartPos = touch.position;
-                }
-
-                // Continue movement while holding that finger
-                if (touch.fingerId == movementTouchId)
-                {
-                    float differenceX = touch.position.x - movementStartPos.x;
-
-                    if (differenceX > swipeDeadZone)
-                        moveDirection = 1f;
-                    else if (differenceX < -swipeDeadZone)
-                        moveDirection = -1f;
-                    else
-                        moveDirection = 0f;
-
-                    // Stop movement when finger is lifted
-                    if (touch.phase == TouchPhase.Ended ||
-                        touch.phase == TouchPhase.Canceled)
-                    {
-                        movementTouchId = -1;
-                        moveDirection = 0f;
-                    }
-                }
-            }
+            moveDirection = joystick.Horizontal;
         }
+
+        // Android controls
+        // if (Input.touchCount > 0)
+        // {
+        //     foreach (Touch touch in Input.touches)
+        //     {
+        //         // Start movement touch on left side
+        //         if (touch.phase == TouchPhase.Began &&
+        //             touch.position.x < Screen.width / 2f &&
+        //             movementTouchId == -1)
+        //         {
+        //             movementTouchId = touch.fingerId;
+        //             movementStartPos = touch.position;
+        //         }
+
+        //         // Continue movement while holding that finger
+        //         if (touch.fingerId == movementTouchId)
+        //         {
+        //             float differenceX = touch.position.x - movementStartPos.x;
+
+        //             if (differenceX > swipeDeadZone)
+        //                 moveDirection = 1f;
+        //             else if (differenceX < -swipeDeadZone)
+        //                 moveDirection = -1f;
+        //             else
+        //                 moveDirection = 0f;
+
+        //             // Stop movement when finger is lifted
+        //             if (touch.phase == TouchPhase.Ended ||
+        //                 touch.phase == TouchPhase.Canceled)
+        //             {
+        //                 movementTouchId = -1;
+        //                 moveDirection = 0f;
+        //             }
+        //         }
+        //     }
+        // }
     }
 
     private void HandleJump()
