@@ -16,6 +16,11 @@ public class EnemyDamage : MonoBehaviour
         }
 
         playerHealth.TakeDamage(damage, transform.position);
+        EnemyPatrolChase patrolChase = GetComponent<EnemyPatrolChase>();
+        if (patrolChase != null)
+        {
+            patrolChase.PauseAfterHittingPlayer();
+        }
         Debug.Log("ENEMY golpeó al player.");
     }
 }

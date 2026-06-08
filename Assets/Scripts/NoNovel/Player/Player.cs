@@ -126,15 +126,15 @@ public class Player : MonoBehaviour
             Jump();
 
         // Android jump: tap right side
-        foreach (Touch touch in Input.touches)
-        {
-            if (touch.phase == TouchPhase.Began &&
-                touch.position.x > Screen.width / 2f &&
-                isGrounded)
-            {
-                Jump();
-            }
-        }
+        // foreach (Touch touch in Input.touches)
+        // {
+        //     if (touch.phase == TouchPhase.Began &&
+        //         touch.position.x > Screen.width / 2f &&
+        //         isGrounded)
+        //     {
+        //         Jump();
+        //     }
+        // }
     }
 
     // ---------- Movement ----------
@@ -144,8 +144,10 @@ public class Player : MonoBehaviour
         
     }
 
-    void Jump()
+    public void Jump()
     {
+        if (!isGrounded) return;
+        
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
