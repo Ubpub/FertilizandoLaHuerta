@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
             StartAttack();
     }
 
-    private void StartAttack()
+    public void StartAttack()
     {
         if (isAttacking) return;
 
@@ -63,7 +63,7 @@ public class PlayerAttack : MonoBehaviour
             EnemyHealth eh = col.GetComponent<EnemyHealth>();
             if (eh != null)
             {
-                eh.TakeDamage(damage);
+                eh.TakeDamage(damage, transform.position);
                 Debug.Log("Enemigo golpeado por el jugador");
             }
         }

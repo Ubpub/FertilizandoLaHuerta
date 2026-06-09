@@ -22,6 +22,8 @@ public class EnemyPatrolChase : MonoBehaviour
     [SerializeField] private float pauseAfterHit = 0.4f;
     private bool isPaused;
 
+    [SerializeField] private EnemyHealth enemyHealth;
+
     private float leftLimit;
     private float rightLimit;
     private bool movingRight = true;
@@ -32,6 +34,7 @@ public class EnemyPatrolChase : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
         if (animator == null) animator = GetComponent<Animator>();
+        if (enemyHealth == null) enemyHealth = GetComponent<EnemyHealth>();
 
         if (player == null)
         {
@@ -61,6 +64,12 @@ public class EnemyPatrolChase : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (enemyHealth != null && enemyHealth.IsKnockedBack)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y);
+            return;
+        }
+
         if (player == null) return;
 
         if (isPaused)
