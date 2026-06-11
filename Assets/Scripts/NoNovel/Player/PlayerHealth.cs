@@ -29,6 +29,8 @@ public class PlayerHealth : MonoBehaviour
     public SpriteRenderer sr;
     public float flickerInterval = 0.08f;
 
+    [Header("UI")]
+    [SerializeField] UIManager uIManager;
 
     private Animator playerAnimator;
 
@@ -48,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
         if (isInvincible) return;
 
         currentHealth -= damage;
+        uIManager.RestaCorazones(currentHealth);
         Debug.Log($"PLAYER recibió {damage} de daño. Vida: {currentHealth}/{maxHealth}");
         StartCoroutine(HitStopCoroutine());
 
@@ -97,6 +100,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("PLAYER ha muerto.");
+        uIManager.ResetVida();
         Respawn();
     }
 
