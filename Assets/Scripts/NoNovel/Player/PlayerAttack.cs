@@ -8,7 +8,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Collider2D attackCollider;
 
     [Header("Attack")]
-    [SerializeField] private float attackDuration = 0.2f;
+    [SerializeField] private float attackDuration = 0.7f;
     [SerializeField] private int damage = 1;
 
     private bool isAttacking;

@@ -121,6 +121,8 @@ public class PlayerHealth : MonoBehaviour
         // mover al spawn
         transform.position = respawnPoint.position;
 
+        uIManager.ResetVida();
+
         Debug.Log("PLAYER respawneó con la vida llena.");
     }
 

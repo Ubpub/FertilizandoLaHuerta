@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
 
     [Header("Ground Check")]
-    [SerializeField] private float groundCheckRadius;
+    [SerializeField] private Vector2 groundCheckSize = new Vector2(0.5f, 0.1f);
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Attack")]
@@ -163,9 +163,10 @@ public class Player : MonoBehaviour
     {
         if (groundCheck == null) return;
 
-        isGrounded = Physics2D.OverlapCircle(
+        isGrounded = Physics2D.OverlapBox(
             groundCheck.position,
-            groundCheckRadius,
+            groundCheckSize,
+            0f,
             groundLayer
         );
     }
@@ -179,10 +180,10 @@ public class Player : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        // if(groundCheck != null)
+        // if (groundCheck != null)
         // {
         //     Gizmos.color = Color.red;
-        //     Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        //     Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
         // }
 
         if (attackPoint == null) return;
